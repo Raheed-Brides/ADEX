@@ -1,0 +1,430 @@
+body{
+      background-color: #f4f4f4;
+      margin: 0;
+}
+.hero {
+    background-image: url('cb019a276870718e71f138dd9f2ab6bf.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:0 0 70px 70px ;
+}
+
+.hero-logo {
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: auto;
+    display: block;
+    box-shadow: 0 4px 15px rgba(85, 85, 85, 0.7);
+    z-index: 2;
+    
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(14, 14, 14, 0.5);
+    z-index: 1;
+       border-radius:0 0 70px 70px ;
+}
+
+.hero-content {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(156, 138, 35);
+    text-align: center;
+    font-size: 1.25rem;
+    z-index: 2;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    margin-top: 90px;
+}
+
+.hero-content a {
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+    text-decoration: none;
+     color: white;
+}
+
+.hero-content a:hover {
+  
+    color: rgb(156, 138, 35);
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+     color: rgb(156, 138, 35);
+    margin-bottom: 10px;
+}
+
+.services h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center; 
+}
+
+.service-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.service-item h4 {
+    font-size: 1.5rem;
+     color: rgb(156, 138, 35);
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Company Info Section */
+.company-info {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.company-info h2 {
+    font-size: 2.5rem;
+    color: rgb(156, 138, 35);
+    margin-bottom: 40px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-section {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.info-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.info-section li {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: rgb(156, 138, 35);
+    margin-bottom: 40px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content .tagline {
+    font-style: italic;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.about-content .emphasis {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: rgb(156, 138, 35);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: rgb(156, 138, 35);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration:underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 2rem;
+    }
+    .services h3 {
+        font-size: 1.2rem;
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .service-item {
+        padding: 20px;
+    }
+}
+
+
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center; /* يخلي أي عناصر ناقصة في النص */
+}
+
+.service-item {
+    flex: 0 1 300px; /* يدي كل عنصر عرض ثابت */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}/* About Us Section */
+.about-us {
+    padding: 70px 20px;
+    background: #f0f0f0; /* خلفية رمادية فاتحة */
+    text-align: center;
+    position: relative;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* خط أنيق واحترافي */
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: rgb(156, 138, 35);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-us h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: rgb(156, 138, 35);
+    margin: 10px auto 30px;
+    border-radius: 2px;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff; /* خلفية بيضاء للبطاقة */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-content .tagline {
+    font-style: italic;
+    color: rgb(156, 138, 35);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.about-content .emphasis {
+    font-weight: bold;
+    color: #222;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+/* نفس خط العنوان اللي في about-us */
+.services h2::after,
+.company-info h2::after,
+.contact h2::after,
+.about-us h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: rgb(156, 138, 35);
+    margin: 10px auto 30px;
+    border-radius: 2px;
+}
+
+.contact-info a {
+    color: rgb(156, 138, 35);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block; /* عشان التحويل يشتغل صح */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    transform: scale(1.2); /* يكبر شوية عند الـ hover */
+    color: #000; /* اختياري: يغمق اللون مع التكبير */
+}
+.contact-info a {
+    color: rgb(156, 138, 35);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block; /* عشان التحويل يشتغل صح */
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0 15px; /* يزود مسافة يمين وشمال بين الأيقونات */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    transform: scale(1.2); /* يكبر شوية عند الـ hover */
+    color: #000; /* يغمق اللون مع التكبير */
+}
+
+/* Scroll To Top Button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 80px; /* فوق زر الواتساب */
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

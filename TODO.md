@@ -1,0 +1,2 @@
+- [x] Update .service-grid in style.css to use CSS Grid for equal item heights
+- [x] Update media query for .service-grid to stack items on mobile
